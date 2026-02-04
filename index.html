@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 春节倒计时 - 二次元版 🌸</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 背景装饰星星 -->
+    <div class="stars-container">
+        <div class="star star-1"></div>
+        <div class="star star-2"></div>
+        <div class="star star-3"></div>
+        <div class="star star-4"></div>
+        <div class="star star-5"></div>
+        <div class="star star-6"></div>
+        <div class="star star-7"></div>
+        <div class="star star-8"></div>
+    </div>
+
+    <!-- 弹幕容器 -->
+    <div class="danmaku-container" id="danmakuContainer"></div>
+
+    <!-- Toast 通知容器 -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- 主容器 -->
+    <div class="main-container">
+        <!-- 标题区域 -->
+        <div class="title-section">
+            <div class="anime-title">
+                        <div class="title-icon">ovo</div>
+                        <h1 class="main-title">
+                            <span class="title-char">春</span>
+                            <span class="title-char">节</span>
+                            <span class="title-char">倒</span>
+                            <span class="title-char">计</span>
+                            <span class="title-char">时</span>
+                        </h1>
+                        <div class="title-icon">ovo</div>
+                    </div>
+                    <div class="subtitle">
+                        <span class="sparkle">OwO</span>
+                        <span>距离 2026 马年春节还有</span>
+                        <span class="sparkle">OwO</span>
+                    </div>        </div>
+
+        <!-- 倒计时显示区域 -->
+        <div class="countdown-wrapper">
+            <div class="anime-border">
+                <div class="countdown-container">
+                    <div class="countdown-text" id="countdownText">
+                        正在计算...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 弹幕输入区域 -->
+        <div class="danmaku-input-section">
+            <div class="anime-card">
+                <div class="card-header">
+                    <span class="card-title">发送弹幕祝福</span>
+                </div>
+                <div class="input-wrapper">
+                    <input
+                        type="text"
+                        id="danmakuInput"
+                        placeholder="写下你的春节祝福~ ovo"
+                        maxlength="50"
+                    >
+                    <button id="sendBtn" class="anime-button">
+                        <span class="btn-text">发送</span>
+                        <span class="btn-icon">OwO</span>
+                    </button>
+                </div>
+                <div class="quick-messages">
+                    <button class="quick-btn" data-msg="新年快乐！🎊">🎊 新年快乐</button>
+                    <button class="quick-btn" data-msg="万事如意！ovo">ovo 万事如意</button>
+                    <button class="quick-btn" data-msg="身体健康！OwO">OwO 身体健康</button>
+                    <button class="quick-btn" data-msg="财源滚滚！(✿◡‿◡)">(✿◡‿◡) 财源滚滚</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 装饰元素 -->
+        <div class="decoration-items">
+            <div class="deco-item deco-1">🎋</div>
+            <div class="deco-item deco-2">🏮</div>
+            <div class="deco-item deco-3">🎐</div>
+            <div class="deco-item deco-4">🌸</div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>ovo Made with OwO for iFlow 新春创造营 ovo</p>
+            <p class="footer-subtitle">2026 马年到，一码当先！OwO</p>
+        </div>
+    </footer>
+
+    <!-- 使用原始脚本（兼容直接打开 HTML 文件） -->
+    <script src="script.js"></script>
+
+    <!-- 如果使用开发服务器，可以使用模块化版本 -->
+    <!-- <script type="module" src="src/main.js"></script> -->
+</body>
+</html>
